@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: itcast-microservice-item
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url.defaultZone: http://itcast:123@127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
